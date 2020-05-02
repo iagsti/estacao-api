@@ -1,0 +1,38 @@
+{
+  "name": "estacao-api",
+  "version": "1.0.0",
+  "description": "An api for IAG station database",
+  "main": "index.js",
+  "scripts": {
+    "test": "cross-env NODE_ENV=test jest --testtimeout=100000 --detectOpenHandles",
+    "start": "nodemon src/server.js"
+  },
+  "author": "Marcelo Schneider <schneider.fei@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "@stdlib/stdlib": "0.0.91",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "knex": "^0.21.1",
+    "mysql2": "^2.1.0",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset": "^1.1.4",
+    "babel-preset-es2015": "^6.24.1",
+    "cross-env": "^7.0.2",
+    "faker": "^4.1.0",
+    "jest": "^25.5.3",
+    "nodemon": "^2.0.3",
+    "sqlite": "^4.0.7",
+    "superagent": "^5.2.2",
+    "supertest": "^4.0.2"
+  },
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "node_modules"
+    ]
+  }
+}
