@@ -7,11 +7,11 @@ let factory = new DadosFactory();
 let dados = factory.generateFakeDados(1);
 
 beforeEach(async () => {
-    await connection('dados').insert(dados);
+    await connection.connection('dados').insert(dados);
 });
 
 afterEach(async () => {
-    await connection('dados').del();
+    await connection.connection('dados').del();
 });
 
 describe('Test temperatura/maxima', () => {

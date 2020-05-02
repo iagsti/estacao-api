@@ -9,11 +9,11 @@ const umidade = factory.generateFakeData(1)
 
 
 beforeEach(async () => {
-    await connection('umidade').insert(umidade);
+    await connection.connection('umidade').insert(umidade);
 });
 
 afterEach(async () => {
-    await connection('umidade').del();
+    await connection.connection('umidade').del();
 });
 
 
